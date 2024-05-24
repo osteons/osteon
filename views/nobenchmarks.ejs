@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre Barcode 128 Text:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial:wght@400&display=swap" />
+    <link rel="stylesheet" href="/nobenchmarks1.css" />
+</head>
+<body>
+<div class="submit-page-with-no-results">
+  <section class="header">
+    <div class="worthwhile">worthwhile</div>
+    <div class="contact">
+      <nav class="contact-us2">
+        <div class="why2">Why?</div>
+        <div class="contact-us3">Contact us</div>
+      </nav>
+    </div>
+  </section>
+        <div class="frame-group">
+            <div class="frame-wrapper">
+                <div class="benchmarks-parent">
+                    <h1 class="benchmarks">Benchmarks</h1>
+                    <div class="sorry-we-dont">
+                        Sorry, we don’t yet have available cost benchmarks for your product type. Help add to our benchmarks below!
+                    </div>
+                </div>
+            </div>
+            <form class="frame-container" method="POST" action="/addProduct">
+              <div class="frame-div">
+                <div class="field1">
+                  <input class="label1" placeholder="Enter product name" type="text" name="productname" />
+                </div>                  
+                <div class="field2">
+                  <input class="label2" placeholder="E.g. workflow run" type="text" name="impactunit" />
+                </div>
+                <div class="field3">
+                  <input class="label3" placeholder="E.g. $0.05" type="text" name="costperimpact" />
+                </div>
+                <div class="field4"> 
+                  <input class="label4" placeholder="Enter source link" type="url" name="sourcelink" />
+                </div>
+                <div class="button-new">
+                  <button class="submit" type="submit">Submit</button>
+                </div>
+              </div>
+            </form>
+        </div>
+</div>
+</body>
+</html>

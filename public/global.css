@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --body-text: Inter;
+  
+    /* font sizes */
+    --body-text-size: 20px;
+    --font-size-base: 16px;
+    --subheading-size: 24px;
+    --font-size-lgi: 19px;
+    --title-size: 54px;
+    --font-size-32xl: 51px;
+    --font-size-19xl: 38px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-black: #000;
+    --color-darkslategray-100: #454545;
+    --color-darkslategray-200: #333;
+    --color-gainsboro: #e0e0e0;
+    --color-gray: #828282;
+  
+    /* Gaps */
+    --gap-134xl: 153px;
+    --gap-57xl: 76px;
+    --gap-19xl: 38px;
+    --gap-21xl: 40px;
+    --gap-xl: 20px;
+    --gap-base: 16px;
+    --gap-lgi: 19px;
+    --gap-5xl: 24px;
+    --gap-29xl: 48px;
+  
+    /* Paddings */
+    --padding-37xl: 56px;
+    --padding-61xl: 80px;
+    --padding-21xl: 40px;
+    --padding-base: 16px;
+    --padding-sm: 14px;
+    --padding-3xs: 10px;
+    --padding-xl: 20px;
+    --padding-2xs: 11px;
+  
+    /* Border radiuses */
+    --br-5xs: 8px;
+  
+    /* Effects */
+    --button-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  }
+
+  .background {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-white);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-37xl) var(--padding-61xl) 410px;
+    box-sizing: border-box;
+    gap: 110px;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  .background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+  }

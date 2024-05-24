@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre Barcode 128 Text:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial:wght@400&display=swap" />
+</head>
+<body>
+  <link rel="stylesheet" href="/results.css" />  
+  <div class="submit-page-with-results">
+        <section class="header">
+          <div class="worthwhile">worthwhile</div>
+          <div class="contact">
+            <nav class="contact-us2">
+              <div class="why2">Why?</div>
+              <div class="contact-us3">Contact us</div>
+            </nav>
+          </div>
+        </section>
+        <section class="benchmarks1">
+          <nav class="benchmark-content">
+            <div class="benchmark-title">
+              <h1 class="benchmarks2">Benchmarks</h1>
+              <div class="compare-your-products">
+                Compare your product’s cost per unit to these market alternatives.
+              </div>
+            </div>
+            <div class="benchmark-table">
+              <% products.forEach(product => { %>
+              <div class="product-table">
+                <div class="product-entry">
+                  <div class="product-name2"><%= product.productname %></div>
+                  <div class="cost-source-link-container">
+                    <span class="cost-source-link-container1">
+                      <p class="cost">Cost: $<%= product.costperimpact %> per <%= product.impactunit %></p>
+                      <p class="source-link">Source link: <a href="<%= product.sourcelink %>"><%= product.sourcelink %></a></p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <% }); %>
+            </div>
+          </nav>
+        </section>
+      </div>
+    </body>
+</html>
