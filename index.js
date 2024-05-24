@@ -6,13 +6,7 @@ const app = express();
 const port = 3000;
 const __dirname = path.resolve();
 
-const db = new pg.Client({
-    user: "postgres",
-    host: "localhost",
-    database: "benchmarks",
-    password: "123456", 
-    port: 5432, 
-});
+const db = new pg.Client(process.env.DATABASE_URL)
 db.connect();
 
 app.set('view engine', 'ejs');
