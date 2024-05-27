@@ -45,26 +45,6 @@
     justify-content: flex-start;
     padding: 50px 0 0;
   }
-  .contact-us,
-  .faq,
-  .why {
-    position: relative;
-    line-height: 150%;
-    font-weight: 500;
-    display: inline-block;
-    min-width: 54px;
-    z-index: 1;
-    font-family: "Questrial";
-  }
-  .contact-us,
-  .faq {
-    min-width: 39px;
-  }
-  .contact-us {
-    min-width: 105px;
-    white-space: nowrap;
-  }
-  .content,
   .navigation {
     display: flex;
     flex-direction: row;
@@ -74,12 +54,23 @@
     color: var(--color-black);
     font-family: var(--body-text);
     padding: 50px 0 43px;
-  }
-  .navigation {
-    margin: 0;
     justify-content: flex-start;
-    gap: var(--gap-29xl);
-  }
+}
+.navigation .why,
+.navigation .contact-us {
+    position: relative;
+    line-height: 150%;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 54px;
+    z-index: 1;
+    font-family: "Questrial";
+}
+.navigation .contact-us {
+    min-width: 105px;
+    white-space: nowrap;
+}
+
   .content {
     align-self: stretch;
     justify-content: space-between;
