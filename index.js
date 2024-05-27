@@ -76,6 +76,14 @@ app.post('/addProduct', async (req, res) => {
     }
 });
 
+app.get('/why', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'why.html'));
+});
+
+app.get('/contactus', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'contact.html'));
+});
+
 app.listen(port, () => {
     console.log(`Server running on port ${port}.`);
 });
