@@ -99,7 +99,7 @@
     font-size: inherit;
     letter-spacing: -0.02em;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
     width: 700px;
     font-family: inherit;
   }
@@ -130,7 +130,7 @@
     width: 1300px;
     flex-direction: row;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     left: -80px;
     font-size: var(--title-size);
     color: var(--color-black);
