@@ -81,7 +81,7 @@ app.get('/why', (req, res) => {
 });
 
 app.get('/contactus', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'contact.html'));
+    res.sendFile(path.join(__dirname, 'public', 'contactus.html'));
 });
 
 app.listen(port, () => {
