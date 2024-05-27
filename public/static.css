@@ -108,6 +108,7 @@
     text-align: left;
     line-height: 150%;
     position: relative;
+    text-align: left;
     left: -130px;
     color: var(--color-gray);
     width: 900px;
