@@ -105,7 +105,7 @@
   }
   .find-out-where {
     font-size: var(--subheading-size);
-    text-align: center;
+    text-align: left;
     line-height: 150%;
     position: relative;
     left: -130px;
