@@ -6,13 +6,9 @@ const app = express();
 const port = 3000;
 const __dirname = path.resolve();
 
-const db = new pg.Client({
-    user: "postgres",
-    host: "localhost",
-    database: "benchmarks",
-    password: "123456", 
-    port: 5432, 
-});
+const db = new pg.Client(process.env.DATABASE_URL)
+db.connect();
+
 db.connect();
 
 app.set('view engine', 'ejs');
@@ -80,6 +76,14 @@ app.post('/addProduct', async (req, res) => {
         console.error('Error inserting product:', err);
         res.status(500).send('Internal Server Error');
     }
+});
+
+app.get('/why', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'why.html'));
+});
+
+app.get('/contactus', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'contact.html'));
 });
 
 app.listen(port, () => {
